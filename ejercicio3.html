@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <h1>Ejercicio3</h1>
+</body>
+</html>
+<script>
+    Prueba=1;
+    function mostrar(){
+        document.write("<br>");
+        document.write("Resultado:"+result1+"<br>")
+    }
+    function sumar(a,b){
+        document.write("suma: "+a+"+"+b)
+        return a+b;
+    }
+    var result1 = sumar(3,5);
+    mostrar();
+    function resta(a,b){
+        document.write("Resta:"+a+"-"+b);
+        return a-b;
+    }
+    var result1 = resta(5,5);
+    mostrar();
+    function multi(a,b){
+        document.write("Multiplicacion:"+a+"x"+b)
+        return a*b;
+    }
+    var result1 = multi(3,2)
+    mostrar();
+    function div(a,b){
+        document.write("Division:"+a+"/"+b);
+        return a/b;
+    }
+    var result1 = div(15,5)
+    mostrar();
+    function cuad(a,b){
+        document.write("Cuadrado: "+a+"*"+b);
+        return a*b;
+    }
+    var result1 = cuad(3,3)
+    mostrar();
+    alert("Prueba1")
+    console.log("Resultado es: ",result1);
+</script>
