@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio7</title>
+</head>
+<body>
+    <center><h1>Realiza un juego diferente al realizado en el cual utilice las herramientas vistas</h1></center>
+</body>
+</html>
+<script>
+    //codigo para adivinar una especie de animal
+    let animales = ["loro","pato","paloma","aguila","colibri","tucan","canario"]
+    var intentos = 3;
+    var contador = 1;
+    var cont = Math.round(Math.random()*6) 
+        console.log(cont)
+    while(contador <= intentos){
+        var textoingresado = prompt("Adivina un animal volador")
+        if(textoingresado == animales[cont]){
+            alert("ganaste en el intento: "+contador+" "+"el animal era: "+ animales[cont])
+                break;
+        }else{
+            alert("ya ni lo intentes")
+        }
+        contador++;
+    }
+    
+    alert("fin")
+</script>

@@ -10,8 +10,7 @@
 </body>
 </html>
 <script>
-    Prueba=1;
-    function mostrar(){
+    function mostrar(a,b){
         document.write("<br>");
         document.write("Resultado:"+result1+"<br>")
     }
@@ -20,31 +19,31 @@
         return a+b;
     }
     var result1 = sumar(3,5);
-    mostrar();
+    mostrar(sumar);
     function resta(a,b){
         document.write("Resta:"+a+"-"+b);
         return a-b;
     }
     var result1 = resta(5,5);
-    mostrar();
+    mostrar(sumar);
     function multi(a,b){
         document.write("Multiplicacion:"+a+"x"+b)
         return a*b;
     }
     var result1 = multi(3,2)
-    mostrar();
+    mostrar(resta);
     function div(a,b){
         document.write("Division:"+a+"/"+b);
         return a/b;
     }
     var result1 = div(15,5)
-    mostrar();
+    mostrar(div);
     function cuad(a,b){
         document.write("Cuadrado: "+a+"*"+b);
         return a*b;
     }
     var result1 = cuad(3,3)
-    mostrar();
+    mostrar(cuad);
     alert("Prueba1")
     console.log("Resultado es: ",result1);
 </script>
