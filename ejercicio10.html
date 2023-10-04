@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio10</title>
+</head>
+<body>
+    <center><h1>Otro ejemplo de insercion de arrays</h1></center>
+</body>
+</html>
+<script>
+function salto_de_linea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function mostrarMensaje(mensaje){
+        document.write(mensaje);
+        salto_de_linea();
+    }
+    var contenido = [];
+    var numeros = parseInt(prompt("Ingrese la cantidad en peligro de extension: "))
+    var cont = 1;
+    while(cont <= numeros){
+        var textopres = prompt("nombre del equipo "+cont);
+        contenido.push(textopres)
+        cont++;
+    }
+    console.log(contenido)
+    for(var i=0; i< contenido.length; i++){
+        document.write(contenido[i])
+        salto_de_linea();
+    }
+    
+</script>

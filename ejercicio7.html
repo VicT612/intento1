@@ -11,6 +11,15 @@
 </html>
 <script>
     //codigo para adivinar una especie de animal
+    function salto_de_linea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function mostrarMensaje(mensaje){
+        document.write(mensaje);
+        salto_de_linea();
+    }
     let animales = ["loro","pato","paloma","aguila","colibri","tucan","canario"]
     var intentos = 3;
     var contador = 1;
@@ -19,7 +28,7 @@
     while(contador <= intentos){
         var textoingresado = prompt("Adivina un animal volador")
         if(textoingresado == animales[cont]){
-            alert("ganaste en el intento: "+contador+" "+"el animal era: "+ animales[cont])
+            alert("ganaste en el intento: "+contador+", "+"el animal era: "+ animales[cont])
                 break;
         }else{
             alert("ya ni lo intentes")
