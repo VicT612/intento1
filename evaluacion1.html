@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion1</title>
+</head>
+<body>
+    <center><h1>Tesoro Perdido</h1></center>
+</body>
+</html>
+<script>
+    function salto(){
+        document.write("<br>");//funcion para dar salto de linea 
+    }
+    function mostrar(mensaje){
+        document.write(mensaje);//funcion para mostrar el contenido al que se hace referencia
+        salto();
+    }
+    var mat = [[2,2,2,2,2],[2,2,2,2,2],[2,2,2,2,2],[2,2,2,2,2],[2,2,2,2,2]];//matriz con datos
+    var numero1 = Math.round(Math.random()*4);//generador de numero random del 0 al 4
+    var numero2 = Math.round(Math.random()*4);//generador de numero random del 0 al 4
+    console.log(numero1, numero2)//mostrar en consola los numeros random obtenidos
+    mat[numero1][numero2] = 1;//reemplaza el valor de un numero de la matriz por 1
+    alert("Se mostrara la matriz 5x5 mediante filas, identifique la posicion en X y en Y del numero 1")
+    for(var i=0; i<mat.length; i++){//ciclo que permite mostrar el contenido de la matriz en la página y por alert
+        mostrar(mat[i]);
+        salto();
+        alert(mat[i]);      
+    }
+    var intentos = 3;
+    var cont = 1;
+    while(cont <= intentos){
+        var texto1 = prompt("Ingrese la posicion en x: ");//numero ingresado
+        var texto2 = prompt("Ingrese la posicion en y: ");//numero ingresado
+        if(texto1 == numero1 && texto2 == numero2){//verificacion si la ubicacion del numero 1 es igual a la ingresada
+            alert("Ganaste en el intento: "+cont+" la ubicación del tesoro era en X: "+numero1+" y en Y:"+numero2);
+            break;
+        }else{
+            alert("Intentalo de nuevo");
+        }
+        cont++;
+    }
+</script>
